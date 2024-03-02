@@ -3,6 +3,7 @@ import HeroSection from "./components/HeroSection";
 import Navbar from "./components/Navbar";
 import ProductBg from "./components/ProductBg";
 import Products from "./components/Products";
+import Projects from "./components/Projects";
 
 function App() {
   
@@ -13,6 +14,7 @@ function App() {
       <HeroSection/>
       <Products/> 
       <ProductBg/>
+      <Projects/>
     </div>
   );
 }
