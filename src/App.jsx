@@ -1,4 +1,5 @@
 import "./App.css";
+import Footer from "./components/Footer";
 import HeroSection from "./components/HeroSection";
 import Navbar from "./components/Navbar";
 import ProductBg from "./components/ProductBg";
@@ -15,6 +16,7 @@ function App() {
       <Products/> 
       <ProductBg/>
       <Projects/>
+      <Footer/>
     </div>
   );
 }
