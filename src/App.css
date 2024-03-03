@@ -4,9 +4,9 @@
 * {
   font-family: "Roboto";
 }
-::-webkit-scrollbar{
+/* ::-webkit-scrollbar{
     scroll-behavior: auto;
-}
+} */
 .heading {
   font-family: "Lora", serif;
   font-optical-sizing: auto;
