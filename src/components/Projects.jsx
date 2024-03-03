@@ -35,7 +35,7 @@ const Projects = () => {
           {/* <button className=" text-sm md:text-lg md:w-[7rem] md:p-1 p-1 m-1 rounded-[30px] text-black bg-[#DBC369]">
             more info
           </button> */}
-          <button className="button">more info</button>
+          <button className="button my-2">more info</button>
         </div>
       </div>
     </div>
