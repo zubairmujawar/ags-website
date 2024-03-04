@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <div className='bg-[#091e20] text-white md:flex justify-center items-center md:h-[50vh] py-2 w-full'>
       <div className='max-w-[1440px] h-[full] md:flex  justify-between mx-auto p-1 m-1 gap-2'>
-        <div className='md:w-[40rem] md:p-3 p-1'>
+        <div className='md:w-[50%] md:p-3 p-1'>
             <h2>Ags Sofas</h2>
             <div className='flex flex-wrap items-center gap-2 p-1'>
                 <LuClock9  size={30}/>
@@ -24,7 +24,7 @@ const Footer = () => {
                 <p>Opp Margosa Heights Apartment, Mohammadwadi, Hadapsar, Pune, Maharashtra 411028</p>
             </div>
         </div>
-        <div className='md:w-[40rem]  md:p-3 p-1'>
+        <div className='md:w-[50%]  md:p-3 p-1'>
             <h2 className='mx-1'>Follow us </h2>
             <div className='flex items-center gap-2 p-1'>
             <FaSquareWhatsapp  size={40}  className='cursor-pointer'/>

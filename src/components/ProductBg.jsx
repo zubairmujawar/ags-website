@@ -6,7 +6,7 @@ const ProductBg = () => {
     <img
       src={productImg}
       alt="heroImg"
-      className="w-full h-screen md:object-cover object-cover"
+      className="w-full h-[80vh] md:object-cover object-cover"
     />
     <div className="absolute flex flex-col gap-3 justify-center items-center">
       <h1 className=" md:text-6xl text-3xl text-white font-bold">Home decor items</h1>

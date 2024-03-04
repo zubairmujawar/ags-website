@@ -15,9 +15,9 @@ const Navbar = () => {
                     <IoMenu onClick={()=>setToggle(!toggle)} className='text-2xl cursor-pointer md:hidden block duration-700'/>
                 }
                 <ul className='hidden md:flex gap-3 px-2'>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Contact</li>
+                    <li className='cursor-pointer'>Home</li>
+                    <li className='cursor-pointer'>About</li>
+                    <li className='cursor-pointer'>Contact</li>
                 </ul>
                 {/* Resposive menu */}
                 <ul className={`md:hidden z-99 duration-700 ease-in-out  fixed bg-[#124044] justify-start items-cnter flex flex-col right-[-100%] top-[4rem] gap-3 p-2 w-full h-[60vh]  ${toggle? 'right-[0]' : 'right-[-100%]'}`}>
