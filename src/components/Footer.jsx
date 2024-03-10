@@ -16,7 +16,7 @@ const Footer = () => {
                 <p>9 AM to 10 PM</p>
             </div>
             <div className='flex items-center gap-2 p-1'>
-                <FaPhoneAlt  size={30}/>
+                <FaPhoneAlt  size={25}/>
                 <p>987654321</p>
             </div>
             <div className='flex items-center gap-2 p-1'>
