@@ -20,7 +20,7 @@ const Footer = () => {
                 <p>987654321</p>
             </div>
             <div className='flex items-center gap-2 p-1'>
-                <FaLocationDot size={30} />
+                <FaLocationDot size={30} className='mr-2'/>
                 <p>Opp Margosa Heights Apartment, Mohammadwadi, Hadapsar, Pune, Maharashtra 411028</p>
             </div>
         </div>

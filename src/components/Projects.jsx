@@ -9,10 +9,11 @@ const Projects = () => {
           <img
             src={projectImg1}
             alt="projectImg1"
-            className="shadow-xl rounded-xl "
-            style={{boxShadow: '7px 7px 7px'}}
+            className="shadow-xl rounded-xl projects-card"
           />
-          <h2 className="md:text-2xl text-xl font-bold text-white my-2">About AGS Sofas</h2>
+          <h2 className="md:text-2xl text-xl font-bold text-white my-2">
+            About AGS Sofas
+          </h2>
           <h4 className="md:text-xl text-lg text-white">
             It is a brand which is bound for quality.
           </h4>
@@ -25,10 +26,11 @@ const Projects = () => {
           <img
             src={projectImg2}
             alt="projectImg2"
-            className="shadow-xl rounded-xl"
-            style={{boxShadow: '7px 7px 7px'}}
+            className="shadow-xl rounded-xl projects-card"
           />
-          <h2 className="md:text-2xl text-xl font-bold text-white my-2">Projects</h2>
+          <h2 className="md:text-2xl text-xl font-bold text-white my-2">
+            Projects
+          </h2>
           <h4 className="md:text-xl text-lg text-white">
             Check some of our past projects.
           </h4>
