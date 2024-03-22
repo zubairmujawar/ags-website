@@ -29,7 +29,8 @@
 }
 
 .project-div {
-  background: linear-gradient(rgb(35, 82, 91), #082729);
+  /* background: linear-gradient(rgb(35, 82, 91), #082729); */
+  background-color: #082729;
 }
 .button {
   cursor: pointer;
