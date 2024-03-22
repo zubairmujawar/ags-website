@@ -20,7 +20,7 @@ const Navbar = () => {
                     <li className='cursor-pointer'>Contact</li>
                 </ul>
                 {/* Resposive menu */}
-                <ul className={`md:hidden z-99 duration-700 ease-in-out  fixed bg-[#124044] justify-start items-cnter flex flex-col right-[-100%] top-[4rem] gap-3 p-2 w-full h-full  ${toggle? 'right-[0]' : 'right-[-100%]'}`}>
+                <ul className={`md:hidden z-[99] duration-700 ease-in-out  fixed bg-[#124044] justify-start items-cnter flex flex-col right-[-100%] top-[4rem] gap-3 p-2 w-full h-full  ${toggle? 'right-[0]' : 'right-[-100%]'}`}>
                     <li className='p-4 text-white'>Home</li>
                     <li className='p-4 text-white'>About</li> 
                     <li className='p-4 text-white'>Contact</li>
