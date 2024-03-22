@@ -4,7 +4,7 @@ import projectImg2 from "../assets/projectImg2.png";
 const Projects = () => {
   return (
     <div className="w-full min-h-[80vh] project-div py-2 md:flex justify-center items-center">
-      <div className="max-w-[1440px] mx-auto h-full p-2   md:flex justify-center  -black gap-3 ">
+      <div className="max-w-[1440px] mx-auto h-full p-2   md:flex justify-center  gap-3 ">
         <div className="md:w-[50%] p-4 h-[80%]  flex flex-col items-start ">
           <img
             src={projectImg1}
