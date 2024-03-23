@@ -11,7 +11,7 @@ const ProductBg = () => {
       rect.top >= 0 &&
       rect.left >= 0 &&
       rect.bottom <=
-        (window.innerHeight || document.documentElement.clientHeight) &&
+      (window.innerHeight || document.documentElement.clientHeight) &&
       rect.right <= (window.innerWidth || document.documentElement.clientWidth)
     );
   };
@@ -42,22 +42,27 @@ const ProductBg = () => {
   return (
     <div className="w-full min-h-full flex justify-center items-center relative">
       <img
-        src={productImg}
+        src={'https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'}
         alt="heroImg"
-        className="w-full h-[80vh] md:object-cover object-cover"
+        className="w-full h-[80vh] md:object-cover object-cover opacity-[0.8]"
       />
       <div
         ref={contentRef}
         className="absolute flex flex-col gap-3 justify-center items-center opacity-0"
       >
-        <h1 className="md:text-6xl text-3xl text-white font-bold">
+        <h1 className="md:text-6xl text-3xl text-black font-bold">
           Home decor items
         </h1>
-        <h4 className="md:text-4xl text-2xl text-white font-semibold">
+        <h4 className="md:text-4xl text-2xl text-black font-semibold">
           Find your new favorites
         </h4>
         <div className="flex justify-between items-center">
-          <button className="button">Shop Now</button>
+          <button className="project-button">
+            <button class="full-rounded ">
+              <span>Shop Now</span>
+              <div class="border full-rounded"></div>
+            </button>
+          </button>
         </div>
       </div>
     </div>

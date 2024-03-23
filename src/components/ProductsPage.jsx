@@ -4,54 +4,47 @@ import { motion } from "framer-motion";
 
 const ProductsPage = ({ index }) => {
   const products = [
-    // {
-    //   id: 1,
-    //   title: "CLOUD SOFA 2-seater",
-    //   price: "₹15750",
-    //   imgSrc:
-    //     "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=480,h=320,fit=crop/YanMG1xnrxiz3rbZ/untitled-design-m2WlgoVrK1tED482.png",
-    // },
     {
-      id: 2,
-      title: "CLOUD SOFA 2-seater",
+      id: 1,
+      title: "Premium sofa",
       price: "₹15900",
       imgSrc:
-        "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=1916&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://i0.wp.com/shopps.in/wp-content/uploads/2023/07/H148c1d4c98ec48fd8abc4ee54c9d95e50.jpg?fit=750%2C750&ssl=1",
+    },
+    {
+      id: 2,
+      title: "Interior",
+      price: "₹16750",
+      imgSrc:
+        "https://img.freepik.com/free-photo/3d-rendering-loft-luxury-living-room-with-bookshelf-near-bookshelf_105762-2224.jpg?t=st=1711217288~exp=1711220888~hmac=e6fc6266244f90a85df243d33b23d0072f55f9b7ba0a996615b5d3306ad26ea1&w=1380",
     },
     {
       id: 3,
-      title: "CLOUD SOFA 2-seater",
-      price: "₹16750",
-      imgSrc:
-        "https://plus.unsplash.com/premium_photo-1661765778256-169bf5e561a6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGludGVyaW9yJTIwZGVzaWdufGVufDB8fDB8fHww",
-    },
-    {
-      id: 4,
-      title: "CLOUD SOFA 2-seater",
+      title: "Furnitures",
       price: "₹17750",
       imgSrc:
-        "https://img.freepik.com/free-photo/gray-sofa-living-room-with-copy-space_43614-926.jpg?t=st=1711131265~exp=1711134865~hmac=4ccc28130be99fe55dfce0bf739432424bf4135b2fa2299aad22b1502a1bb2a3&w=1060",
-    },
-    {
-      id: 5,
-      title: "CLOUD SOFA 2-seater",
-      price: "₹22750",
-      imgSrc:
-        "https://img.freepik.com/free-photo/picture-frame-by-velvet-armchair_53876-132788.jpg?w=740&t=st=1711131773~exp=1711132373~hmac=f1373c14c74be2b3ac51456c5d126f5e71cb593fa63fdf565b0ca3c34129f341",
+        "https://www.smartwoodfurniture.com/wp-content/uploads/2023/07/gracia-banner.jpg",
     },
     {
       id: 6,
-      title: "CLOUD SOFA 2-seater",
-      price: "₹12750",
-      imgSrc:
-        "https://img.freepik.com/free-photo/curtain-with-sunlight_1339-4061.jpg?t=st=1711131507~exp=1711135107~hmac=2054e39affbd8ab8af2fc54600813dc28f13067a952b0719879aca92daa7d91d&w=1380",
-    },
-    {
-      id: 7,
-      title: "CLOUD SOFA 2-seater",
+      title: "Curtains",
       price: "₹1750",
       imgSrc:
-        "https://img.freepik.com/free-photo/couch-with-colored-cushions-close_1203-324.jpg?t=st=1711131908~exp=1711135508~hmac=9c959a1e1d109590995d0d75a490a328d5ed2a4726fbf58b2775ee2df865b5f4&w=1380",
+        "https://img.freepik.com/free-photo/3d-rendering-beautiful-luxury-bedroom-suite-hotel-with-tv_105762-2149.jpg?t=st=1711218485~exp=1711222085~hmac=ac0f3d04178638473c8de4a0c42d8c6dc8f26e4547726cb41f8c25ac3b517ae1&w=1380",
+    },
+    {
+      id: 5,
+      title: "Headboard",
+      price: "₹12750",
+      imgSrc:
+        "https://img.freepik.com/free-photo/luxurious-modern-bedroom-with-comfortable-bedding-elegant-decor-generated-by-ai_188544-29870.jpg?t=st=1711217053~exp=1711220653~hmac=7d997ba326ae6f1951c9d190070c4998b6cb2c9bcfb626c7e752761db64e258c&w=1380",
+    },
+    {
+      id: 4,
+      title: "Chaires",
+      price: "₹22750",
+      imgSrc:
+        "https://img.freepik.com/free-photo/picture-frame-by-velvet-armchair_53876-132788.jpg?w=740&t=st=1711131773~exp=1711132373~hmac=f1373c14c74be2b3ac51456c5d126f5e71cb593fa63fdf565b0ca3c34129f341",
     },
   ];
   return (
@@ -59,8 +52,8 @@ const ProductsPage = ({ index }) => {
       <div className="max-w-[1440px] m-auto text-center p-2">
         <div className=" text-center p-2 mx-6 my-5 rounded-lg">
           <h2 className="font-serif text-2xl">
-            Indulge in ultimate comfort with our exquisite selection of sofas,
-            crafted to redefine luxury and elevate your living space.
+            "Indulge in ultimate comfort with our exquisite selection of sofas,
+            crafted to redefine luxury and elevate your living space."
           </h2>
         </div>
         <motion.div className=" -red-400   flex flex-wrap gap-2 mx-auto  justify-center max-w-[90vw]">
@@ -82,8 +75,7 @@ const ProductsPage = ({ index }) => {
                 alt="img"
                 className="object-cover md:w-70 rounded-lg aspect-[4/3] "
               />
-              <h2>{item.title}</h2>
-              <h3>{item.price}</h3>
+              <h2 className="text-2xl">{item.title}</h2>
             </div>
           ))}
         </motion.div>
