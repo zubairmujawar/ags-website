@@ -36,7 +36,7 @@ const Footer = () => {
         <motion.div className='md:w-[50%]  md:p-3 p-1'
         initial="hidden"
         whileInView="show"
-        viewport={{ once: false }}
+        viewport={{ once: true }}
         transition={{ duration: 0.8, delay: 0.1 }}
         variants={{
           show: { opacity: 1, y: 0 },
@@ -45,7 +45,7 @@ const Footer = () => {
         >
             <h2 className='mx-1'>Follow us </h2>
             <div className='flex items-center gap-2 p-1'>
-            <a href="https://whatsapp.com/agssofas" target="_blank">
+            <a href="whatsapp://send?phone=+919579569517&text=Hello!" target="_blank">
             <FaSquareWhatsapp  size={40}  className='cursor-pointer hover:text-green-900'/>
             </a>
             <a href="https://instagram.com/agssofas" target="_blank">

@@ -18,7 +18,7 @@ const About = () => {
   //     }
   // }
   return (
-    <div className="h-[80vh] bg-gradient-to-r from-green-300 to-green-900 flex justify-center items-center overflow-hidden ">
+    <div className="h-[80vh] bg-gradient-to-r bg-[#e5fdfe] flex justify-center items-center overflow-hidden ">
       {/* <img src="https://images.pexels.com/photos/189333/pexels-photo-189333.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="img" className='w-full h-full object-cover aspect-[10/8] absolute z-[5]' /> */}
       <video
         src={video}

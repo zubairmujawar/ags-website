@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import heroImg from "../assets/products.png";
 import projectImg1 from "../assets/projectImg1.png";
 import projectImg2 from "../assets/projectImg2.png";
 import video from "../assets/video.mp4";
@@ -21,15 +20,18 @@ const HeroSection = () => {
     },
   };
 
+    const scrollToTop = () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+
   return (
     <>
       {/* Home Section */}
       <div className="w-full md:h-full h-[80vh] flex justify-center items-start z-2">
         <img
-          src={heroImg}
+          src="https://i.ibb.co/Vx44MGM/products.png"
           alt="heroImg"
-          className="w-full  object-cover
-        h-screen  heroImg z-5"
+          className="w-full  object-cover h-screen  heroImg z-5"
         />
         <motion.div
           initial="hidden"
@@ -54,9 +56,9 @@ const HeroSection = () => {
           <motion.div className="flex justify-between items-center">
             <div className="flex justify-between mt-8 items-center">
               <Link to="/products">
-              <button className="button" href="#">
-                Get started
-              </button>
+                <button className="button" href="#">
+                  Get started
+                </button>
               </Link>
             </div>
           </motion.div>
@@ -99,15 +101,16 @@ const HeroSection = () => {
       {/* Projects section */}
       <div className="w-full min-h-[80vh] project-div py-2 md:flex justify-center items-center">
         <div className="max-w-[1440px] mx-auto h-full p-2   md:flex justify-center  gap-3 ">
-          <motion.div className="md:w-[50%] p-4 h-[80%]  flex flex-col items-start " 
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true }}
-          transition={{ duration: 0.8, delay: 0.1 }}
-          variants={{
-            show: { opacity: 1, y: 0 },
-            hidden: { opacity: 0, y: 100 },
-          }}
+          <motion.div
+            className="md:w-[50%] p-4 h-[80%]  flex flex-col items-start "
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.1 }}
+            variants={{
+              show: { opacity: 1, y: 0 },
+              hidden: { opacity: 0, y: 100 },
+            }}
           >
             <img
               src={projectImg1}
@@ -120,19 +123,20 @@ const HeroSection = () => {
             <h4 className="md:text-xl text-lg text-white">
               It is a brand which is bound for quality.
             </h4>
-            <Link to="/contact">
-            <button className="button my-2">more info</button>
+            <Link to="/contact" onClick={scrollToTop}>
+              <button className="button my-2">more info</button>
             </Link>
           </motion.div>
-          <motion.div className="md:w-[50%] p-4 h-[80%] flex  flex-col items-start "
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true }}
-          transition={{ duration: 0.8, delay: 0.1 }}
-          variants={{
-            show: { opacity: 1, y: 0 },
-            hidden: { opacity: 0, y: 100 },
-          }}
+          <motion.div
+            className="md:w-[50%] p-4 h-[80%] flex  flex-col items-start "
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.1 }}
+            variants={{
+              show: { opacity: 1, y: 0 },
+              hidden: { opacity: 0, y: 100 },
+            }}
           >
             <img
               src={projectImg2}
@@ -145,8 +149,8 @@ const HeroSection = () => {
             <h4 className="md:text-xl text-lg text-white">
               Check some of our past projects.
             </h4>
-            <Link to="/products">
-            <button className="button my-2">more info</button>
+            <Link to="/products" onClick={scrollToTop}>
+              <button className="button my-2">more info</button>
             </Link>
           </motion.div>
         </div>

@@ -5,6 +5,12 @@ import logo from "../assets/ags-new-logo.png";
 import { NavLink, Link } from "react-router-dom";
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
+
+  const handleNavLinkClick = () => {
+    // Close the responsive menu when a navigation link is clicked
+    setToggle(false);
+  };
+
   return (
     <header className=" w-full p-2 h-16 bg-[#124044] text-white">
       <nav className="max-w-[1440px] mx-auto h-full flex justify-between items-center">
@@ -12,7 +18,7 @@ const Navbar = () => {
         <img
           src={logo}
           alt="logo"
-          className="w-[3rem] h-[35px] object-cover "
+          className="w-[3.5rem] h-[55px] object-cover "
         />
         </Link>
         {toggle ? (
@@ -31,10 +37,11 @@ const Navbar = () => {
           <li>
             <NavLink
               to="/"
+              
               className={({ isActive }) =>
                 `block py-2 ${
                   isActive ? "underline underline-offset-8" : "text-white"
-                } pr-4 pl-3 duration-200 lg:hover:bg-transparent `
+                } pr-4 pl-3 duration-800 lg:hover:bg-transparent `
               }
             >
               Home
@@ -46,7 +53,7 @@ const Navbar = () => {
               className={({ isActive }) =>
                 `block py-2 ${
                   isActive ? "underline underline-offset-8" : "text-white"
-                } pr-4 pl-3 duration-200 lg:hover:bg-transparent `
+                } pr-4 pl-3 duration-800 lg:hover:bg-transparent `
               }
             >
               About
@@ -58,7 +65,7 @@ const Navbar = () => {
               className={({ isActive }) =>
                 `block py-2 ${
                   isActive ? "underline underline-offset-8" : "text-white"
-                } pr-4 pl-3 duration-200 lg:hover:bg-transparent `
+                } pr-4 pl-3 duration-800 lg:hover:bg-transparent `
               }
             >
               Services
@@ -70,7 +77,7 @@ const Navbar = () => {
               className={({ isActive }) =>
                 `block py-2 ${
                   isActive ? "underline underline-offset-8" : "text-white"
-                } pr-4 pl-3 duration-200 lg:hover:bg-transparent `
+                } pr-4 pl-3 duration-800 lg:hover:bg-transparent `
               }
             >
               Contact
@@ -86,47 +93,56 @@ const Navbar = () => {
           <li>
             <NavLink
               to="/"
+              onClick={handleNavLinkClick}
               className={({ isActive }) =>
-                `${
+                `block py-2 ${
                   isActive ? "underline underline-offset-8" : "text-white"
-                } p-2`
+                } pr-4 pl-3 duration-800 lg:hover:bg-transparent `
               }
-            />
-            Home
+            >
+              Home
+            </NavLink>
           </li>
           <li>
             <NavLink
               to="/about"
+              onClick={handleNavLinkClick}
               className={({ isActive }) =>
-                `${
+                `block py-2 ${
                   isActive ? "underline underline-offset-8" : "text-white"
-                } p-2`
+                } pr-4 pl-3 duration-800 lg:hover:bg-transparent `
               }
-            />
-            About
-          </li>
-          <li>
-            <NavLink
-              to="/contact"
-              className={({ isActive }) =>
-                `${
-                  isActive ? "underline underline-offset-8" : "text-white"
-                } p-2`
-              }
-            />
-            Contact
+            >
+              About
+            </NavLink>
           </li>
           <li>
             <NavLink
               to="/products"
+              onClick={handleNavLinkClick}
               className={({ isActive }) =>
-                `${
+                `block py-2 ${
                   isActive ? "underline underline-offset-8" : "text-white"
-                } p-2`
+                } pr-4 pl-3 duration-800 lg:hover:bg-transparent `
               }
-            />
-            Services
+            >
+              Services
+            </NavLink>
           </li>
+          <li>
+            <NavLink
+              to="/contact"
+              onClick={handleNavLinkClick}
+              className={({ isActive }) =>
+                `block py-2 ${
+                  isActive ? "underline underline-offset-8" : "text-white"
+                } pr-4 pl-3 duration-800 lg:hover:bg-transparent `
+              }
+            >
+              Contact
+            </NavLink>
+          </li>
+          
         </ul>
       </nav>
     </header>
