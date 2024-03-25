@@ -8,6 +8,7 @@ import { FaSquareWhatsapp } from "react-icons/fa6";
 import { Link } from 'react-router-dom';
 const Footer = () => {
   return (
+    <>
     <div className='bg-[#091e20] text-white md:flex justify-center items-center md:h-[50vh] py-2 w-full'>
       <div className='max-w-[1440px] h-[full] md:flex  justify-between mx-auto p-1 m-1 gap-2'>
         <motion.div className='md:w-[50%] md:p-3 p-1'
@@ -23,18 +24,18 @@ const Footer = () => {
             <h2>Ags Sofas</h2>
             <div className='flex flex-wrap items-center gap-2 p-1'>
                 <LuClock9  size={30}/>
-                <p>9 AM to 10 PM</p>
+                <p className='text-sm md:text-lg'>9 AM to 10 PM</p>
             </div>
             <div className='flex items-center gap-2 p-1'>
                 <Link href="tel:+917020083904" className='flex my-2 gap-3'>
                 <FaPhoneAlt  size={25}/>
-                <p>+91 7020083904</p>
+                <p className='text-sm md:text-lg'>+91 7020083904</p>
                 </Link>
             </div>
             <div className='flex items-center gap-2 p-1 '>
-                <Link href="https://www.google.com/maps/dir/18.474021,73.8771897/AGS+SOFAS,+Opp+Margosa+Heights+Apartment,+Mohammadwadi,+Hadapsar,+Pune,+Maharashtra+411028/@18.4757308,73.8573259,13z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x3bc2eb7b7fccff45:0xb285b14d13d7e52f!2m2!1d73.9230623!2d18.4709791?entry=ttu" className='flex my-2 gap-3'>
+                <Link className='flex my-2 gap-3'>
                 <FaLocationDot size={30} className='mr-2'/>
-                <p>Opp Margosa Heights Apartment, Mohammadwadi, Hadapsar, Pune, Maharashtra 411028</p>
+                <p className='text-sm md:text-lg'>Opp Margosa Heights Apartment, Mohammadwadi, Hadapsar, Pune, Maharashtra 411028</p>
                 </Link>
             </div>
         </motion.div>
@@ -63,6 +64,8 @@ const Footer = () => {
         </motion.div>
       </div>
     </div>
+    <h2 className='text-sm bg-black text-white text-center py-2'>Copyright 2023 <Link tp="/" className='text-[#dbc369]'>@agssofas</Link>, All rights reserved.</h2>
+    </>
   )
 }
 

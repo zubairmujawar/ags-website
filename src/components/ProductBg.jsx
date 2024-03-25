@@ -50,7 +50,7 @@ const ProductBg = () => {
         ref={contentRef}
         className="absolute flex flex-col gap-3 justify-center items-center opacity-0"
       >
-        <h1 className="md:text-6xl text-3xl text-black font-bold">
+        <h1 className="md:text-6xl text-3xl text-black font-semibold">
           Home decor items
         </h1>
         <h4 className="md:text-4xl text-2xl text-black font-semibold">

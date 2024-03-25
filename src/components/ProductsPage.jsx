@@ -40,7 +40,7 @@ const ProductsPage = ({ index }) => {
     },
     {
       id: 4,
-      title: "Chaires",
+      title: "Chairs",
       price: "₹22750",
       imgSrc: chairs,
     },
@@ -50,8 +50,7 @@ const ProductsPage = ({ index }) => {
       <div className="max-w-[1440px] md:w-[80vw] m-auto text-center p-2">
         <div className=" text-center p-2 mx-6 my-5 rounded-lg">
           <h2 className="font-serif text-2xl">
-            "Indulge in ultimate comfort with our exquisite selection of sofas,
-            crafted to redefine luxury and elevate your living space."
+            "Design your home exactly how you imagined it. We build your vision. Crafted with you in mind."
           </h2>
         </div>
         <motion.div className=" -red-400   flex flex-wrap gap-2 mx-auto  justify-center max-w-[90vw]">
