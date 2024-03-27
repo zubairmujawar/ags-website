@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import React, { useRef, useEffect, useState } from "react";
 import projectImg1 from "../assets/projectImg1.png";
 import projectImg2 from "../assets/projectImg2.png";
-import curtain from "../assets/curtain.jpg";
 import inrerior from "../assets/interior.jpg";
 import furniture from "../assets/furniture.jpg";
 import video from "../assets/pexels.mp4";
@@ -40,7 +39,7 @@ const HeroSection = () => {
   return (
     <>
       {/* Home Section */}
-      <section className="md:flex flex-wrap items-center py-3 justify-center md:h-[35rem]">
+      <section className="md:flex flex-wrap items-center py-3 my-3 justify-center h-auto">
         {/* <!-- Information Part (Left Side) --> */}
         <div className="w-full md:w-1/2 px-4 mx-auto">
           <motion.div
@@ -88,7 +87,7 @@ const HeroSection = () => {
             >
               <swiper-slide>
                 <img
-                  src={curtain}
+                  src="https://images.unsplash.com/photo-1537726235470-8504e3beef77?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt="Image 1"
                   className="aspect-[5/3] rounded-lg"
                 />
@@ -124,7 +123,7 @@ const HeroSection = () => {
       </div>
 
       {/* Product section */}
-      <div className="w-full min-h-full flex justify-center items-center relative">
+      <div className="w-full h-auto min-h-[30rem] flex justify-center items-center relative">
         <img
           src={
             "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
@@ -165,7 +164,7 @@ const HeroSection = () => {
 
       {/* About section */}
 
-      <div className="md:h-[35rem] h-[30rem] bg-[#124044] flex justify-center items-center overflow-hidden ">
+      <div className="md:h-[35rem] h-auto min-h-[30rem] bg-[#124044] flex justify-center items-center overflow-hidden ">
         <video
           src={video}
           className="w-full h-[30rem]  absolute my-9 z-[5] overflow-hidden object-cover"
@@ -199,7 +198,7 @@ const HeroSection = () => {
         </motion.div>
       </div>
       {/* Projects section */}
-      <div className="w-full min-h-[80vh] project-div py-2 md:flex justify-center items-center">
+      <div className="w-full h-auto min-h-[30rem] project-div py-2 md:flex justify-center items-center">
         <div className="max-w-[1440px] mx-auto h-full p-2   md:flex justify-center  gap-3 ">
           <motion.div
             className="md:w-[50%] p-4 h-[80%]  flex flex-col items-start "

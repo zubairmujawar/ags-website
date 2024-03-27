@@ -1,4 +1,29 @@
+import React from "react";
 const Contact = () => {
+  const [result, setResult] = React.useState("");
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setResult("Sending....");
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "b4ebb577-7950-4d35-861d-5a4c51b5fb3e");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData,
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      setResult("Form Submitted Successfully");
+      event.target.reset();
+    } else {
+      console.log("Error", data);
+      setResult(data.message);
+    }
+  };
   return (
     <div className="bg-[#ecfdfd]">
       <div class="mx-auto max-w-7xl  px-4">
@@ -10,89 +35,80 @@ const Contact = () => {
                 <p class="text-2xl font-bold text-gray-900 md:text-4xl">
                   Get in touch
                 </p>
-                <p class="mt-4 text-lg text-gray-600">
-                  Our friendly team would love to hear from you.
-                </p>
-                <form action="" class="mt-8 space-y-4">
-                  <div class="grid w-full gap-y-4 md:gap-x-4 lg:grid-cols-2">
+                <div className="max-w-md mx-auto">
+                  <form action="" class="mt-8 space-y-4">
+                    <div class="grid w-full gap-y-4 md:gap-x-4 lg:grid-cols-2">
+                      <div class="grid w-full  items-center gap-1.5">
+                        <label
+                          class="text-sm font-medium leading-none text-gray-700 peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                          for="first_name"
+                        >
+                          First Name
+                        </label>
+                        <input
+                          class="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-800 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 "
+                          type="text"
+                          id="first_name"
+                          placeholder="First Name"
+                        />
+                      </div>
+                    
+                    </div>
                     <div class="grid w-full  items-center gap-1.5">
                       <label
                         class="text-sm font-medium leading-none text-gray-700 peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                        for="first_name"
+                        for="email"
                       >
-                        First Name
+                        Name
                       </label>
                       <input
-                        class="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-800 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 "
+                        class="flex h-10 w-full rounded-md border border-gray-500 bg-transparent px-3 py-2 text-sm text-gray-700  placeholder:text-gray-800  focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 "
                         type="text"
-                        id="first_name"
-                        placeholder="First Name"
+                        id="email"
+                        placeholder="Email"
                       />
                     </div>
                     <div class="grid w-full  items-center gap-1.5">
                       <label
                         class="text-sm font-medium leading-none text-gray-700 peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                        for="last_name"
+                        for="email"
                       >
-                        Last Name
+                        Email
                       </label>
                       <input
-                        class="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-800 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 "
+                        class="flex h-10 w-full rounded-md border border-gray-500 bg-transparent px-3 py-2 text-sm text-gray-700  placeholder:text-gray-800  focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 "
                         type="text"
-                        id="last_name"
-                        placeholder="Last Name"
+                        id="email"
+                        placeholder="Email"
                       />
                     </div>
-                  </div>
-                  <div class="grid w-full  items-center gap-1.5">
-                    <label
-                      class="text-sm font-medium leading-none text-gray-700 peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                      for="email"
+                    
+                    <div class="grid w-full  items-center gap-1.5">
+                      <label
+                        class="text-sm font-medium leading-none text-gray-700 peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                        for="message"
+                      >
+                        Message
+                      </label>
+                      <textarea
+                        class="flex h-28 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-800 focus:outline-none focus:ring-1 focus:ring-gray-500 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 "
+                        id="message"
+                        placeholder="Leave us a message"
+                        cols="6"
+                        rows="6"
+                      ></textarea>
+                    </div>
+                    <button
+                      type="button"
+                      onSubmit={onSubmit}
+                      class="w-full rounded-md bg-black px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
                     >
-                      Email
-                    </label>
-                    <input
-                      class="flex h-10 w-full rounded-md border border-gray-500 bg-transparent px-3 py-2 text-sm text-gray-700  placeholder:text-gray-800  focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 "
-                      type="text"
-                      id="email"
-                      placeholder="Email"
-                    />
-                  </div>
-                  <div class="grid w-full  items-center gap-1.5">
-                    <label
-                      class="text-sm font-medium leading-none text-gray-700 peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                      for="phone_number"
-                    >
-                      Phone number
-                    </label>
-                    <input
-                      class="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-800 focus:outline-none focus:ring-1 focus:ring-gray-500 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 text-gray-700 "
-                      type="tel"
-                      id="phone_number"
-                      placeholder="Phone number"
-                    />
-                  </div>
-                  <div class="grid w-full  items-center gap-1.5">
-                    <label
-                      class="text-sm font-medium leading-none text-gray-700 peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                      for="message"
-                    >
-                      Message
-                    </label>
-                    <textarea
-                      class="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-800 focus:outline-none focus:ring-1 focus:ring-gray-500 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 "
-                      id="message"
-                      placeholder="Leave us a message"
-                      cols="3"
-                    ></textarea>
-                  </div>
-                  <button
-                    type="button"
-                    class="w-full rounded-md bg-black px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
-                  >
-                    Send Message
-                  </button>
-                </form>
+                      Send Message
+                    </button>
+                    {result && <span className="text-green-500">{result}</span>}
+                  </form>
+                </div>
+
                 {/* <div className="animation-div-home-about"></div> */}
               </div>
             </div>
