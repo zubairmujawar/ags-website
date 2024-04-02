@@ -23,10 +23,12 @@ const About = () => {
             hidden: { opacity: 0, y: 100 },
           }}
         >
-          <motion.h2 className="md:text-[4rem] text-[1.5rem] font-semibold">
+            <div className="absolute bg-[#c0c0c08b] w-full h-[30rem] z-[6]"></div>
+
+          <motion.h2 className="md:text-[4rem] text-[1.5rem] z-[7] font-semibold">
             Ags sofa's and Interoirs
           </motion.h2>
-          <motion.p className="md:text-2xl text-sm">
+          <motion.p className="md:text-xl text-sm z-[7]">
             "Welcome to our world of exquisite furniture and interior design! At
             Ags sofa's, we believe that every home deserves to be a sanctuary of
             style and comfort. With our passion for craftsmanship and attention
@@ -66,7 +68,7 @@ const About = () => {
             <img
               src="https://images.unsplash.com/photo-1617615181070-ab4788da6d03?auto=format&fit=crop&w=400&h=384"
               alt="Why Choose Us"
-              class="w-32 h-32 rounded-full shadow-lg mr-4"
+              class=" w-32 h-32 rounded-full shadow-lg mr-4"
             />
             <h3 className="font-semibold">Quality wood</h3>
             <p class="text-sm text-gray-800">
@@ -95,9 +97,9 @@ const About = () => {
               alt="Why Choose Us"
               class="w-32 h-32 rounded-full shadow-lg mr-4"
             />
-            <h3 className="font-semibold">Best workers</h3>
+            <h3 className="font-semibold">Best Staff </h3>
             <p class="text-sm text-gray-800">
-              We have the best workers to build furniture, ensuring exceptional
+              We have the best staff  to build furniture, ensuring exceptional
               craftsmanship and attention to detail. Our commitment to using the
               highest quality products guarantees the durability and longevity
               of our furniture pieces.

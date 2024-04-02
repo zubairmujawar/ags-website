@@ -51,10 +51,10 @@ const HeroSection = () => {
               show: { opacity: 1, y: 0 },
               hidden: { opacity: 0, y: 100 },
             }}
-            className="text-center md:text-left"
+            className="text-center md:text-left ml-4"
           >
             <h1 className="md:text-5xl text-3xl font-bold mb-2">
-              Welcome to <br />
+              
               <span className="text-[#dbc369] md:text-5xl text-3xl">
                 AGS Sofas
               </span>
@@ -109,12 +109,6 @@ const HeroSection = () => {
               {/* <swiper-slide>Slide ...</swiper-slide> */}
             </swiper-container>
           </div>
-
-          {/* <img
-          src="https://www.milindpai.com/wp-content/uploads/2023/03/maxresdefault.jpg"
-          alt="heroImg"
-          className="w-full  object-cover aspect-[8/5]  heroImg z-5 rounded-md"
-        /> */}
         </div>
       </section>
 
@@ -142,7 +136,7 @@ const HeroSection = () => {
           }}
           className="absolute flex flex-col gap-3 justify-center items-center opacity-0"
         >
-          <h1 className="md:text-6xl text-2xl text-center text-black font-bold">
+          <h1 className="md:text-5xl text-2xl text-center text-black font-bold">
             "Unlock the Potential of Your Home"
           </h1>
           <h4 className="md:text-4xl text-2xl text-gray-800 font-semibold">
@@ -167,7 +161,7 @@ const HeroSection = () => {
       <div className="md:h-[35rem] h-auto min-h-[30rem] bg-[#124044] flex justify-center items-center overflow-hidden ">
         <video
           src={video}
-          className="w-full h-[30rem]  absolute my-9 z-[5] overflow-hidden object-cover"
+          className="w-full h-[30rem]   absolute my-9 z-[5] overflow-hidden object-cover"
           muted
           loop
           autoPlay
@@ -183,17 +177,12 @@ const HeroSection = () => {
             hidden: { opacity: 0, y: 100 },
           }}
         >
-          <motion.h2 className="md:text-[5rem] text-[1.5rem] font-bold">
+          <div className="absolute bg-[#c0c0c08b] w-[100vw] h-[30rem] z-[6]"></div>
+          <motion.h2 className="md:text-[4rem] text-[1.5rem] z-[7]  font-bold">
             Ags sofa's and Interoirs
           </motion.h2>
-          <motion.p className="md:text-2xl text-[16px] font-semibold">
-            "Welcome to our world of furniture and interior design! At Ags
-            sofa's, we believe that every home deserves to be a sanctuary of
-            style and comfort. With our passion for craftsmanship and attention
-            to detail, we curate a diverse collection of furniture pieces and
-            decor accents that blend functionality with timeless elegance. Let
-            us help you transform your house into a home that reflects your
-            unique personality and celebrates the art of living beautifully."
+          <motion.p className="md:text-xl text-[1rem] z-[7] font-semibold text-[#082729] ">
+            "Design your home exactly how you imagined it. We build your vision."
           </motion.p>
         </motion.div>
       </div>

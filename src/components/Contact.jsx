@@ -31,27 +31,14 @@ const Contact = () => {
           <div class="grid items-center justify-items-center gap-x-4 gap-y-10 lg:grid-cols-2">
             <div class="flex items-center justify-center">
               <div className="animation-div-contact-left"></div>
-              <div class="px-2 md:px-12">
+              <div class="px-1 md:px-12 md:w-[25rem] w-15rem">
                 <p class="text-2xl font-bold text-gray-900 md:text-4xl">
                   Get in touch
                 </p>
                 <div className="max-w-md mx-auto">
-                  <form action="" class="mt-8 space-y-4">
-                    <div class="grid w-full gap-y-4 md:gap-x-4 lg:grid-cols-2">
-                      <div class="grid w-full  items-center gap-1.5">
-                        <label
-                          class="text-sm font-medium leading-none text-gray-700 peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                          for="first_name"
-                        >
-                          First Name
-                        </label>
-                        <input
-                          class="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-800 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 "
-                          type="text"
-                          id="first_name"
-                          placeholder="First Name"
-                        />
-                      </div>
+                  <form action="" class="space-y-8">
+                    <div class="grid w-full  items-center gap-1.5">
+                    
                     
                     </div>
                     <div class="grid w-full  items-center gap-1.5">
@@ -64,8 +51,8 @@ const Contact = () => {
                       <input
                         class="flex h-10 w-full rounded-md border border-gray-500 bg-transparent px-3 py-2 text-sm text-gray-700  placeholder:text-gray-800  focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 "
                         type="text"
-                        id="email"
-                        placeholder="Email"
+                        id="Name"
+                        placeholder="Name"
                       />
                     </div>
                     <div class="grid w-full  items-center gap-1.5">
@@ -108,7 +95,6 @@ const Contact = () => {
                     {result && <span className="text-green-500">{result}</span>}
                   </form>
                 </div>
-
                 {/* <div className="animation-div-home-about"></div> */}
               </div>
             </div>
