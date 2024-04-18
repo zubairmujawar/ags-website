@@ -39,7 +39,7 @@ const HeroSection = () => {
   return (
     <>
       {/* Home Section */}
-      <section className="md:flex flex-wrap items-center py-3 my-3 justify-center h-[35rem]">
+      <section className="md:flex flex-wrap items-center py-3 my-3 md:justify-center justify-around h-[35rem]">
         {/* <!-- Information Part (Left Side) --> */}
         <div className="w-full md:w-1/2 px-4 mx-auto">
           <motion.div
@@ -73,7 +73,7 @@ const HeroSection = () => {
         </div>
 
         {/* <!-- Image Part (Right Side) --> */}
-        <div className="w-full md:w-1/2 px-4 ">
+        <div className="w-full md:w-1/2 px-4 mt-16 md:mt-0">
           <div id="slider" className="relative overflow-hidden">
             <swiper-container
               className="swiper"

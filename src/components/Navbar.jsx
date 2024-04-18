@@ -86,7 +86,7 @@ const Navbar = () => {
         </ul>
         {/* Resposive menu */}
         <ul
-          className={`md:hidden z-[99] duration-700 ease-in-out  fixed bg-[#124044] justify-start items-cnter flex flex-col right-[-100%] top-[4rem] gap-3 p-2 w-full h-full  ${
+          className={`md:hidden z-[99] duration-700 ease-in-out  fixed bg-[#124044] justify-start items-center flex flex-col right-[-100%] top-[4rem] gap-3 p-2 w-full h-full  ${
             toggle ? "right-[0]" : "right-[-100%]"
           }`}
         >

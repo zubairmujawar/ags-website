@@ -23,7 +23,7 @@ const About = () => {
             hidden: { opacity: 0, y: 100 },
           }}
         >
-            <div className="absolute bg-[#c0c0c08b] w-full h-[30rem] z-[6]"></div>
+            <div className="absolute bg-[#c0c0c08b] w-full h-[25rem] md:h-[30rem] z-[6]"></div>
 
           <motion.h2 className="md:text-[4rem] text-[1.5rem] z-[7] font-semibold">
             Ags sofa's and Interoirs
