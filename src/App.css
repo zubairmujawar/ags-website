@@ -8,9 +8,34 @@
 * {
   font-family: "Roboto";
 }
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   scroll-behavior: smooth;
   -ms-overflow-style: none
+} */
+/* ::-webkit-scrollbar{
+  background-color: rgb(105, 105, 105);
+  color: #082729;
+} */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #7b1919;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-track {
+  background: #a5a5a5;
+}
+::-webkit-scrollbar-thumb {
+  background: #082729;
 }
 .heading {
   font-family: "Madimi One", serif;

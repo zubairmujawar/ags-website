@@ -39,7 +39,7 @@ const HeroSection = () => {
   return (
     <>
       {/* Home Section */}
-      <section className="md:flex flex-wrap items-center py-3 my-3 justify-center h-auto">
+      <section className="md:flex flex-wrap items-center py-3 my-3 justify-center h-[35rem]">
         {/* <!-- Information Part (Left Side) --> */}
         <div className="w-full md:w-1/2 px-4 mx-auto">
           <motion.div

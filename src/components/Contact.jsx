@@ -1,7 +1,9 @@
 import React from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 const Contact = () => {
   const [result, setResult] = React.useState("");
-
+  const notify = () => toast.success("Form Submitted Successfully");
   const onSubmit = async (event) => {
     event.preventDefault();
     setResult("Sending....");
@@ -19,6 +21,7 @@ const Contact = () => {
     if (data.success) {
       setResult("Form Submitted Successfully");
       event.target.reset();
+      notify();
     } else {
       console.log("Error", data);
       setResult(data.message);
@@ -26,81 +29,70 @@ const Contact = () => {
   };
   return (
     <div className="bg-[#ecfdfd]">
-      <div class="mx-auto max-w-7xl  px-4">
-        <div class="mx-auto max-w-7xl py-12  md:py-24">
-          <div class="grid items-center justify-items-center gap-x-4 gap-y-10 lg:grid-cols-2">
-            <div class="flex items-center justify-center">
+      <div className="mx-auto max-w-7xl  px-4">
+        <div className="mx-auto max-w-7xl py-12  md:py-24">
+          <div className="grid items-center justify-items-center gap-x-4 gap-y-10 lg:grid-cols-2">
+            <div className="flex items-center justify-center">
               <div className="animation-div-contact-left"></div>
-              <div class="px-1 md:px-12 md:w-[25rem] w-15rem">
-                <p class="text-2xl font-bold text-gray-900 md:text-4xl">
+              <div className="px-1 md:px-12 md:w-[25rem] w-15rem">
+                <p className="text-2xl font-bold text-gray-900 md:text-4xl">
                   Get in touch
                 </p>
                 <div className="max-w-md mx-auto">
-                  <form action="" class="space-y-8">
-                    <div class="grid w-full  items-center gap-1.5">
-                    
-                    
-                    </div>
-                    <div class="grid w-full  items-center gap-1.5">
+                  <div className="max-w-md mx-auto">
+                    <form onSubmit={onSubmit} className="gap-3">
                       <label
-                        class="text-sm font-medium leading-none text-gray-700 peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                        for="email"
+                        className="text-sm font-medium leading-none text-gray-700 peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                        htmlFor="email"
                       >
                         Name
                       </label>
                       <input
-                        class="flex h-10 w-full rounded-md border border-gray-500 bg-transparent px-3 py-2 text-sm text-gray-700  placeholder:text-gray-800  focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 "
                         type="text"
-                        id="Name"
-                        placeholder="Name"
+                        name="name"
+                        required
+                        className="flex h-10 w-full rounded-md border border-gray-500 bg-transparent px-3 py-2 text-sm text-gray-700  placeholder:text-gray-800  focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 "
                       />
-                    </div>
-                    <div class="grid w-full  items-center gap-1.5">
                       <label
-                        class="text-sm font-medium leading-none text-gray-700 peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                        for="email"
+                        className="text-sm font-medium leading-none text-gray-700 peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                        htmlFor="email"
                       >
                         Email
                       </label>
                       <input
-                        class="flex h-10 w-full rounded-md border border-gray-500 bg-transparent px-3 py-2 text-sm text-gray-700  placeholder:text-gray-800  focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 "
-                        type="text"
-                        id="email"
-                        placeholder="Email"
+                        type="email"
+                        name="email"
+                        required
+                        className="flex h-10 w-full rounded-md border border-gray-500 bg-transparent px-3 py-2 text-sm text-gray-700  placeholder:text-gray-800  focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 "
                       />
-                    </div>
-                    
-                    <div class="grid w-full  items-center gap-1.5">
                       <label
-                        class="text-sm font-medium leading-none text-gray-700 peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                        for="message"
+                        className="text-sm font-medium leading-none text-gray-700 peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                        htmlFor="message"
                       >
                         Message
                       </label>
                       <textarea
-                        class="flex h-28 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-800 focus:outline-none focus:ring-1 focus:ring-gray-500 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 "
-                        id="message"
-                        placeholder="Leave us a message"
-                        cols="6"
-                        rows="6"
+                        className="flex h-28 w-full rounded-md border border-gray-500 bg-transparent px-3 py-2 text-sm placeholder:text-gray-800 focus:outline-none focus:ring-1 focus:ring-gray-500 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
+                        name="message"
+                        required
                       ></textarea>
-                    </div>
-                    <button
-                      type="button"
-                      onSubmit={onSubmit}
-                      class="w-full rounded-md bg-black px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
-                    >
-                      Send Message
-                    </button>
-                    {result && <span className="text-green-500">{result}</span>}
-                  </form>
+
+                      <button
+                        className="w-full rounded-md bg-black px-3 mt-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+                        type="submit"
+                      >
+                        Submit Form
+                      </button>
+                      <ToastContainer />
+                    </form>
+                    <span>{result}</span>
+                  </div>
                 </div>
-                {/* <div className="animation-div-home-about"></div> */}
               </div>
             </div>
             <img
               alt="Contact us"
-              class="hidden max-h-full w-full rounded-lg object-cover lg:block"
+              className="hidden max-h-full w-full rounded-lg object-cover lg:block"
               src="https://images.pexels.com/photos/1571457/pexels-photo-1571457.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             />
           </div>

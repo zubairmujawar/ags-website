@@ -65,7 +65,7 @@ const Footer = () => {
     </div>
     <h2 className='text-sm bg-black text-white text-center py-2'>Copyright 2023 <Link tp="/" className='text-[#dbc369]'>@agssofas</Link>, All rights reserved.</h2> */}
 
-      <footer className="bg-white dark:bg-gray-950">
+      <footer className="bg-gray-950">
         <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
           <motion.div className="md:flex md:justify-between" 
           initial="hidden"
@@ -143,7 +143,7 @@ const Footer = () => {
                 <ul className="text-gray-500 dark:text-gray-400 font-medium">
                   <li className="mb-4">
                     <Link
-                      href="https://instagram.com/agssofas"
+                      href="tel:+917020083904"
                       target="_blank"
                       className="hover:underline flex gap-2 justify-center items-center"
                     >
