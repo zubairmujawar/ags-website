@@ -1,48 +1,42 @@
 import React from "react";
 import { motion } from "framer-motion";
-import curtain from "../assets/curtain.jpg";
-import chairs from "../assets/chairs.jpg";
-import inrerior from "../assets/interior.jpg";
-import furniture from "../assets/furniture.jpg";
-import headboard from "../assets/headboard-new.jpg";
-import sofa from "../assets/sofa.jpg";
 const ProductsPage = ({ index }) => {
   const products = [
     {
       id: 1,
       title: "Premium sofa",
       price: "₹15900",
-      imgSrc: sofa,
+      imgSrc: 'https://i.ibb.co/3hsNJnM/sofa.jpg',
     },
     {
       id: 2,
       title: "Interior",
       price: "₹16750",
-      imgSrc: inrerior,
+      imgSrc: 'https://i.ibb.co/4KtRnPV/interior.jpg',
     },
     {
       id: 3,
       title: "Furnitures",
       price: "₹17750",
-      imgSrc: furniture,
+      imgSrc: 'https://i.ibb.co/DfqQCbQ/furniture.jpg',
     },
     {
       id: 6,
       title: "Curtains",
       price: "₹1750",
-      imgSrc: curtain,
+      imgSrc: 'https://i.ibb.co/ysyMtp3/curtain.jpg',
     },
     {
       id: 5,
       title: "Headboard",
       price: "₹12750",
-      imgSrc: headboard,
+      imgSrc: 'https://i.ibb.co/8MkrTBf/headboard-new.jpg',
     },
     {
       id: 4,
       title: "Chairs",
       price: "₹22750",
-      imgSrc: chairs,
+      imgSrc: 'https://i.ibb.co/0YkNHzW/chairs.jpg',
     },
   ];
   return (

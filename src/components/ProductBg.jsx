@@ -1,5 +1,4 @@
 import React, { useRef, useEffect, useState } from "react";
-import productImg from "../assets/products.png";
 
 const ProductBg = () => {
   const contentRef = useRef(null);

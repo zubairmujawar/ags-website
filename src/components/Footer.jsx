@@ -84,14 +84,14 @@ const Footer = () => {
                   Contact Now
                 </h2>
                 <ul className="text-gray-500 font-medium">
-                  <li className="mb-4 md:ml-0 ml-3">
+                  <li className="mb-4 md:ml-0 ">
                     <a
                       href="tel:+917020083904"
                       target="_blank"
-                      className="hover:underline flex gap-2 justify-center items-center"
+                      className="flex"
                     >
                       7020083904
-                      <img src={phoneImg} alt="img" className="h-6" />
+                      <img src={phoneImg} alt="img" className="h-6 ml-2" />
                     </a>
                   </li>
                   <li>

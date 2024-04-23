@@ -1,9 +1,5 @@
 import { Link } from "react-router-dom";
 import React, { useRef, useEffect, useState } from "react";
-import projectImg1 from "../assets/projectImg1.png";
-import projectImg2 from "../assets/projectImg2.png";
-import inrerior from "../assets/interior.jpg";
-import furniture from "../assets/furniture.jpg";
 import video from "../assets/pexels.mp4";
 import { motion } from "framer-motion";
 
@@ -87,21 +83,21 @@ const HeroSection = () => {
             >
               <swiper-slide>
                 <img
-                  src="https://images.unsplash.com/photo-1537726235470-8504e3beef77?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  src="https://i.ibb.co/1m3DCcj/roberto-nickson-tle-CJi-DOri0-unsplash.jpg"
                   alt="Image 1"
                   className="aspect-[5/3] rounded-lg"
                 />
               </swiper-slide>
               <swiper-slide>
                 <img
-                  src={inrerior}
+                  src='https://i.ibb.co/4KtRnPV/interior.jpg'
                   alt="Image 1"
                   className="aspect-[5/3] rounded-lg"
                 />
               </swiper-slide>
               <swiper-slide>
                 <img
-                  src={furniture}
+                  src='https://i.ibb.co/DfqQCbQ/furniture.jpg'
                   alt="Image 1"
                   className="aspect-[5/3] rounded-lg"
                 />
@@ -117,10 +113,10 @@ const HeroSection = () => {
       </div>
 
       {/* Product section */}
-      <div className="w-full h-auto min-h-[30rem] flex justify-center items-center relative">
+      <section className="w-full h-auto min-h-[30rem] flex justify-center items-center relative">
         <img
           src={
-            "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            "https://i.ibb.co/dkVYhGw/photo-1571460.jpg"
           }
           alt="heroImg"
           className="w-full md:h-[35rem] h-[30rem] md:object-cover object-cover opacity-[0.8]"
@@ -150,7 +146,7 @@ const HeroSection = () => {
             </Link>
           </div>
         </motion.div>
-      </div>
+      </section>
 
       <div className="w-full h-15 py-4 bg-[#124044] md:block inline-block text-white md:text-4xl text-2xl z-10 text-center ">
         <h1>About us</h1>
@@ -158,7 +154,7 @@ const HeroSection = () => {
 
       {/* About section */}
 
-      <div className="md:h-[35rem] h-auto min-h-[30rem] bg-[#124044] flex justify-center items-center overflow-hidden ">
+      <section className="md:h-[35rem] h-auto min-h-[30rem] bg-[#124044] flex justify-center items-center overflow-hidden ">
         <video
           src={video}
           className="w-full h-[30rem]   absolute my-9 z-[5] overflow-hidden object-cover"
@@ -185,9 +181,9 @@ const HeroSection = () => {
             "Design your home exactly how you imagined it. We build your vision."
           </motion.p>
         </motion.div>
-      </div>
+      </section>
       {/* Projects section */}
-      <div className="w-full h-auto min-h-[30rem] project-div py-2 md:flex justify-center items-center">
+      <section className="w-full h-auto min-h-[30rem] project-div py-2 md:flex justify-center items-center">
         <div className="max-w-[1440px] mx-auto h-full p-2   md:flex justify-center  gap-3 ">
           <motion.div
             className="md:w-[50%] p-4 h-[80%]  flex flex-col items-start "
@@ -201,7 +197,7 @@ const HeroSection = () => {
             }}
           >
             <img
-              src={projectImg1}
+              src='https://i.ibb.co/n3HNGd1/project-Img1.png'
               alt="projectImg1"
               className="shadow-xl rounded-xl projects-card"
             />
@@ -227,7 +223,7 @@ const HeroSection = () => {
             }}
           >
             <img
-              src={projectImg2}
+              src='https://i.ibb.co/2SQxGZj/project-Img2.png'
               alt="projectImg2"
               className="shadow-xl rounded-xl projects-card"
             />
@@ -242,7 +238,7 @@ const HeroSection = () => {
             </Link>
           </motion.div>
         </div>
-      </div>
+      </section>
     </>
   );
 };

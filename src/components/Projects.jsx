@@ -6,7 +6,7 @@ const Projects = () => {
       <div className="max-w-[1440px] mx-auto h-full p-2   md:flex justify-center  gap-3 ">
         <div className="md:w-[50%] p-4 h-[80%]  flex flex-col items-start ">
           <img
-            src={projectImg1}
+            src='https://i.ibb.co/n3HNGd1/project-Img1.png'
             alt="projectImg1"
             className="shadow-xl rounded-xl projects-card"
           />
@@ -20,7 +20,7 @@ const Projects = () => {
         </div>
         <div className="md:w-[50%] p-4 h-[80%] flex  flex-col items-start ">
           <img
-            src={projectImg2}
+            src='https://i.ibb.co/2SQxGZj/project-Img2.png'
             alt="projectImg2"
             className="shadow-xl rounded-xl projects-card"
           />
