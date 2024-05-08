@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import React, { useRef, useEffect, useState } from "react";
-import video from "../assets/pexels.mp4";
+import video from "../../assets/pexels.mp4";
 import { motion } from "framer-motion";
 
 const HeroSection = () => {
@@ -50,7 +50,6 @@ const HeroSection = () => {
             className="text-center md:text-left ml-4"
           >
             <h1 className="md:text-5xl text-3xl font-bold mb-2">
-              
               <span className="text-[#dbc369] md:text-5xl text-3xl">
                 AGS Sofas
               </span>
@@ -90,14 +89,14 @@ const HeroSection = () => {
               </swiper-slide>
               <swiper-slide>
                 <img
-                  src='https://i.ibb.co/4KtRnPV/interior.jpg'
+                  src="https://i.ibb.co/4KtRnPV/interior.jpg"
                   alt="Image 1"
                   className="aspect-[5/3] rounded-lg"
                 />
               </swiper-slide>
               <swiper-slide>
                 <img
-                  src='https://i.ibb.co/DfqQCbQ/furniture.jpg'
+                  src="https://i.ibb.co/DfqQCbQ/furniture.jpg"
                   alt="Image 1"
                   className="aspect-[5/3] rounded-lg"
                 />
@@ -115,9 +114,7 @@ const HeroSection = () => {
       {/* Product section */}
       <section className="w-full h-auto min-h-[30rem] flex justify-center items-center relative">
         <img
-          src={
-            "https://i.ibb.co/dkVYhGw/photo-1571460.jpg"
-          }
+          src={"https://i.ibb.co/dkVYhGw/photo-1571460.jpg"}
           alt="heroImg"
           className="w-full md:h-[35rem] h-[30rem] md:object-cover object-cover opacity-[0.8]"
         />
@@ -140,7 +137,7 @@ const HeroSection = () => {
           </h4>
           <div className="flex justify-between items-center">
             <Link to="/products">
-              <button className="bg-transparent hover:bg-[#C1A362] rounded-full text-black font-semibold hover:text-white py-2 px-4 border border-[#262115] hover:border-transparent">
+              <button onClick={scrollToTop} className="bg-transparent hover:bg-[#C1A362] rounded-full text-black font-semibold hover:text-white py-2 px-4 border border-[#262115] hover:border-transparent">
                 Shop now
               </button>
             </Link>
@@ -178,7 +175,8 @@ const HeroSection = () => {
             Ags sofa's and Interoirs
           </motion.h2>
           <motion.p className="md:text-xl text-[1rem] z-[7] font-semibold text-[#082729] ">
-            "Design your home exactly how you imagined it. We build your vision."
+            "Design your home exactly how you imagined it. We build your
+            vision."
           </motion.p>
         </motion.div>
       </section>
@@ -197,7 +195,7 @@ const HeroSection = () => {
             }}
           >
             <img
-              src='https://i.ibb.co/n3HNGd1/project-Img1.png'
+              src="https://i.ibb.co/n3HNGd1/project-Img1.png"
               alt="projectImg1"
               className="shadow-xl rounded-xl projects-card"
             />
@@ -223,7 +221,7 @@ const HeroSection = () => {
             }}
           >
             <img
-              src='https://i.ibb.co/2SQxGZj/project-Img2.png'
+              src="https://i.ibb.co/2SQxGZj/project-Img2.png"
               alt="projectImg2"
               className="shadow-xl rounded-xl projects-card"
             />

@@ -1,25 +1,23 @@
 import { useState } from "react";
 import { MdOutlineClose } from "react-icons/md";
 import { IoMenu } from "react-icons/io5";
-import logo from "../assets/ags-new-logo.png";
+import logoImg from "../../assets/ags-new-logo.png";
 import { NavLink, Link } from "react-router-dom";
 const Navbar = () => {
-  const [toggle, setToggle] = useState(false);
-
+  const [toggle, setToggle] = useState(false);  
   const handleNavLinkClick = () => {
     // Close the responsive menu when a navigation link is clicked
     setToggle(false);
   };
-
   return (
     <header className=" w-full p-2 h-16 bg-[#124044] text-white">
       <nav className="max-w-[1440px] mx-auto h-full flex justify-between items-center">
         <Link to="/">
-        <img
-          src={logo}
-          alt="logo"
-          className="w-[3.5rem] h-[55px] object-cover "
-        />
+          <img
+            src={logoImg}
+            alt="logo"
+            className="w-[3.5rem] h-[55px] object-cover "
+          />
         </Link>
         {toggle ? (
           <MdOutlineClose
@@ -33,11 +31,9 @@ const Navbar = () => {
           />
         )}
         <ul className="hidden md:flex gap-3 px-2">
-
           <li>
             <NavLink
               to="/"
-              
               className={({ isActive }) =>
                 `block py-2 ${
                   isActive ? "underline underline-offset-8" : "text-white"
@@ -142,8 +138,8 @@ const Navbar = () => {
               Contact
             </NavLink>
           </li>
-          
         </ul>
+        <button className="hover:border p-2 rounded-md">login</button>
       </nav>
     </header>
   );

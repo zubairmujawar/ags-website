@@ -1,7 +1,7 @@
-import About from "./About"
-import HeroSection from "./HeroSection"
-import ProductBg from "./ProductBg"
-import Products from "./Products"
+import About from "./aboutsection/About"
+import HeroSection from "./herosection/HeroSection"
+import ProductBg from "./ourproduct/ProductBg"
+import Products from "./ourproduct/Products"
 
 const Home = () => {
   return (

@@ -1,5 +1,3 @@
-import projectImg1 from "../assets/projectImg1.png";
-import projectImg2 from "../assets/projectImg2.png";
 const Projects = () => {
   return (
     <div className="w-full min-h-[80vh] project-div py-2 md:flex justify-center items-center">

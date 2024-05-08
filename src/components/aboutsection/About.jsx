@@ -1,5 +1,5 @@
 import React from "react";
-import video from "../assets/pexels.mp4";
+import video from "../../assets/pexels.mp4";
 import { motion } from "framer-motion";
 const About = () => {
   return (

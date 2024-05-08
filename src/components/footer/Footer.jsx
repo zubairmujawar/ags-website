@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
-import facebookImg from "../assets/facebook.png";
-import instagramImg from "../assets/instagram.png";
-import whatsappImg from "../assets/whatsapp.png";
-import phoneImg from "../assets/phone.png";
-import logo from "../assets/ags-new-logo.png";
+import facebookImg from "../../assets/facebook.png";
+import instagramImg from "../../assets/instagram.png";
+import whatsappImg from "../../assets/whatsapp.png";
+import phoneImg from "../../assets/phone.png";
+import logo from "../../assets/ags-new-logo.png";
 import { Link } from "react-router-dom";
 const Footer = () => {
   return (
@@ -109,7 +109,7 @@ const Footer = () => {
             </div>
           </motion.div>
           <hr className="my-6 border-gray-200 sm:mx-auto  lg:my-8" />
-          <div className="sm:flex sm:items-center  sm:justify-between">
+          {/* <div className="sm:flex sm:items-center  sm:justify-between">
             <span className="text-sm md:text-lg text-gray-500  sm:text-center">
               © 2024{" "}
               <Link href="/" className="hover:underline  text-[#dbc369]">
@@ -117,7 +117,10 @@ const Footer = () => {
               </Link>
               . All Rights Reserved.
             </span>
-          </div>
+          </div> */}
+          <p className="text-center  text-sm md:text-lg text-gray-500  sm:text-center">
+          © 2024  <Link  href="/" className="hover:underline  text-[#dbc369]">Ags Sofas</Link> . All Rights Reserved.
+          </p>
         </div>
       </footer>
     </>
