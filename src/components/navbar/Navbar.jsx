@@ -4,13 +4,13 @@ import { IoMenu } from "react-icons/io5";
 import logoImg from "../../assets/ags-new-logo.png";
 import { NavLink, Link } from "react-router-dom";
 const Navbar = () => {
-  const [toggle, setToggle] = useState(false);  
+  const [toggle, setToggle] = useState(false);
   const handleNavLinkClick = () => {
     // Close the responsive menu when a navigation link is clicked
     setToggle(false);
   };
   return (
-    <header className=" w-full p-2 h-16 bg-[#124044] text-white">
+    <header className=" w-full p-2 h-16 bg-[#08373b] text-white fixed top-0 z-20">
       <nav className="max-w-[1440px] mx-auto h-full flex justify-between items-center">
         <Link to="/">
           <img
@@ -139,7 +139,7 @@ const Navbar = () => {
             </NavLink>
           </li>
         </ul>
-        <button className="hover:border p-2 rounded-md">login</button>
+        <button className="border p-2 rounded-xl w-20">Login</button>
       </nav>
     </header>
   );

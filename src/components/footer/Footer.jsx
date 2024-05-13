@@ -10,15 +10,16 @@ const Footer = () => {
     <>
       <footer className="bg-gray-950">
         <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
-          <motion.div className="md:flex md:justify-between" 
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: false }}
-          transition={{ duration: 0.8, delay: 0.1 }}
-          variants={{
-            show: { opacity: 1, y: 0 },
-            hidden: { opacity: 0, y: 100 },
-          }}
+          <motion.div
+            className="md:flex md:justify-between"
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: false }}
+            transition={{ duration: 0.8, delay: 0.1 }}
+            variants={{
+              show: { opacity: 1, y: 0 },
+              hidden: { opacity: 0, y: 100 },
+            }}
           >
             <div className="mb-6 md:mb-0 text-white">
               <a href="/" className="flex items-center">
@@ -63,17 +64,15 @@ const Footer = () => {
                       target="_blank"
                       className="hover:underline flex gap-2"
                     >
-                      Facebook
                       <img src={facebookImg} alt="img" className="h-6" />
                     </a>
                   </li>
-                  <li className="mb-4">
+                  <li className="mb-4 text-center">
                     <a
                       href="https://instagram.com/agssofas"
                       target="_blank"
                       className="hover:underline flex gap-2"
                     >
-                      Instagram
                       <img src={instagramImg} alt="img" className="h-6" />
                     </a>
                   </li>
@@ -100,7 +99,6 @@ const Footer = () => {
                       target="_blank"
                       className="hover:underline flex gap-2"
                     >
-                      Whatsapp
                       <img src={whatsappImg} alt="img" className="h-6" />
                     </a>
                   </li>
@@ -109,17 +107,12 @@ const Footer = () => {
             </div>
           </motion.div>
           <hr className="my-6 border-gray-200 sm:mx-auto  lg:my-8" />
-          {/* <div className="sm:flex sm:items-center  sm:justify-between">
-            <span className="text-sm md:text-lg text-gray-500  sm:text-center">
-              © 2024{" "}
-              <Link href="/" className="hover:underline  text-[#dbc369]">
-                Ags Sofas
-              </Link>
-              . All Rights Reserved.
-            </span>
-          </div> */}
           <p className="text-center  text-sm md:text-lg text-gray-500  sm:text-center">
-          © 2024  <Link  href="/" className="hover:underline  text-[#dbc369]">Ags Sofas</Link> . All Rights Reserved.
+            © 2024{" "}
+            <Link href="/" className="hover:underline  text-[#dbc369]">
+              Ags Sofas
+            </Link>{" "}
+            . All Rights Reserved.
           </p>
         </div>
       </footer>

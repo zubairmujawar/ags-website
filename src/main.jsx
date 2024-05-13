@@ -7,6 +7,8 @@ import About from "./components/aboutsection/About.jsx";
 import ProductsPage from "./components/productpage/ProductsPage.jsx";
 import Contact from "./components/contact/Contact.jsx";
 import HeroSection from "./components/herosection/HeroSection.jsx";
+import HomePage from "./pages/HomePage.jsx";
+import AboutPage from "./pages/AboutPage.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -14,11 +16,11 @@ const router = createBrowserRouter([
     children: [
       {
         path: "",
-        element: <HeroSection />,
+        element: <HomePage/>,
       },
       {
         path: "/about",
-        element: <About />,
+        element: <AboutPage/>,
       },
       {
         path: "/products",
